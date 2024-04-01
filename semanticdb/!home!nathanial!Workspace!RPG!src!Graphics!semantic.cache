@@ -1,0 +1,543 @@
+;; Object semanticdb-project-database-file-156177f06508
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-156177f06508"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15617924d828"
+      :major-mode c-mode
+      :tags 
+        '( ("rendering_functions.h" include nil nil [14 46])
+            ("rendering_components.h" include nil nil [47 80])
+            ("rendering_functions.h" include nil nil [81 113])
+            ("death_control.h" include nil nil [114 140])
+            ("Frame_Increment" function
+               (:arguments 
+                  ( ("entity" variable
+                       (:reference 1
+                        :type ("entt::entity" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163 184])
+                    ("scale" variable
+                       (:reference 1
+                        :type ("Component::Scale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [185 209])
+                    ("sheetData" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Sprite_Sheet_Info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [210 261])
+                    ("action" variable
+                       (:reference 1
+                        :type ("Action_Component::Action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [262 295])
+                    ("direction" variable
+                       (:reference 1
+                        :type ("Component::Direction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [296 328]))                  
+                :type "void")
+                nil [142 3615])
+            ("Update_Item_Frame" function
+               (:arguments 
+                  ( ("clipRect" variable
+                       (:reference 1
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3644 3663])
+                    ("row" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3664 3676])
+                    ("column" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3677 3693]))                  
+                :type "void")
+                nil [3621 3777])
+            ("Update_Equipment" function
+               (:arguments 
+                  ( ("item" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Equip_Slot_Data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3802 3846])
+                    ("action" variable
+                       (:reference 1
+                        :type ("Action_Component::Action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3847 3880])
+                    ("direction" variable
+                       (:reference 1
+                        :type ("Component::Direction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3881 3913]))                  
+                :type "void")
+                nil [3779 4138]))          
+      :file "PVG_frames.h"
+      :pointmax 4139
+      :fsize 4138
+      :lastmodtime '(25779 17880 705366 913000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table-15617924d89c"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [14 33])
+            ("db.h" include nil nil [34 49])
+            ("action_components.h" include nil nil [50 80])
+            ("rendering_components.h" include nil nil [81 114])
+            ("Spritesheet_Structs" type
+               (:members 
+                  ( ("Frame_Data" type
+                       (:members 
+                          ( ("numFrames" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [212 230])
+                            ("firstFrame" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [266 285])
+                            ("reverses" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [310 332])
+                            ("frameLength" variable
+                               (:default-value "16"
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [363 388]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [152 393])
+                    ("Frame" type
+                       (:members 
+                          ( ("startFrame" variable (:type "int") (reparse-symbol classsubparts) [416 431])
+                            ("numFrames" variable (:type "int") (reparse-symbol classsubparts) [436 450]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [397 455])
+                    ("Frame_Data_Packer" type
+                       (:members 
+                          ( ("startFrame" variable
+                               (:default-value "9999"
+                                :type "int")
+                                (reparse-symbol classsubparts) [491 513])
+                            ("NumFrames" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [518 536])
+                            ("reverses" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [541 558])
+                            ("frameSpeed" variable
+                               (:default-value "75"
+                                :type "int")
+                                (reparse-symbol classsubparts) [563 583]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [460 588])
+                    ("spriteSheet" type
+                       (:members 
+                          ( ("w" variable (:type "int") (reparse-symbol classsubparts) [639 645])
+                            ("h" variable (:type "int") (reparse-symbol classsubparts) [650 656])
+                            ("frameData" variable
+                               (:pointer 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("Action_Component::Action_State" type nil nil nil)
+                                          ("Frame_Data" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [661 725])
+                            ("offset_x" variable (:type "float") (reparse-symbol classsubparts) [730 745])
+                            ("offset_y" variable (:type "float") (reparse-symbol classsubparts) [750 765])
+                            ("texture" variable
+                               (:pointer 1
+                                :type ("SDL_Texture" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [770 791]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [592 796])
+                    ("demon" variable
+                       (:pointer 1
+                        :type ("spriteSheet" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [800 819])
+                    ("cow" variable
+                       (:pointer 1
+                        :type ("spriteSheet" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [822 839])
+                    ("skeleton_00" variable
+                       (:pointer 1
+                        :type ("spriteSheet" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [842 867])
+                    ("frameData" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("Action_Component::Action_State" type nil nil nil)
+                              ("Frame_Data" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [871 934])
+                    ("Data_On_Unit" type
+                       (:members 
+                          ( ("frameData" variable (:type ("spriteSheet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [964 986])
+                            ("timeOnFrame" variable (:type "float") (reparse-symbol classsubparts) [991 1009])
+                            ("currentFrame" variable (:type "int") (reparse-symbol classsubparts) [1014 1031]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [938 1036])
+                    ("sheetData" type
+                       (:members 
+                          ( ("w" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [1063 1073])
+                            ("h" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [1078 1088])
+                            ("x_offset" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol classsubparts) [1093 1112])
+                            ("y_offset" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol classsubparts) [1117 1136])
+                            ("sheet_width" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [1141 1161])
+                            ("time_between_frames" variable
+                               (:default-value "0"
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1166 1198])
+                            ("sheet_type" variable
+                               (:default-value "\"flare\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1203 1236])
+                            ("isStatic" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1241 1276])
+                            ("idle" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1281 1312])
+                            ("walk" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1317 1348])
+                            ("run" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1353 1383])
+                            ("attack" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1388 1421])
+                            ("attack2" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1426 1460])
+                            ("cast" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1465 1496])
+                            ("struck" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1501 1534])
+                            ("block" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1539 1571])
+                            ("evade" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1576 1608])
+                            ("stunned" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1613 1647])
+                            ("dying" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1652 1684])
+                            ("corpse" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1689 1722])
+                            ("low_hp" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1727 1760])
+                            ("resting" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1765 1799])
+                            ("ranged" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1804 1837])
+                            ("cheer" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1842 1874])
+                            ("behavior" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1879 1914])
+                            ("summoned" variable
+                               (:default-value "{0, 0, 0, 0}"
+                                :type ("Frame_Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1919 1954]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1040 1959])
+                    ("Get_Sprite_Sheet" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1992 2010]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1963 2663])
+                    ("Calculate_Start_Frame" function
+                       (:arguments 
+                          ( ("actionFrameData" variable
+                               (:reference 1
+                                :type ("std::unordered_map" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil)
+                                          ("Rendering_Components::Frame_Data_Packer" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2695 2781])
+                            ("action" variable
+                               (:reference 1
+                                :type ("Action_Component::Action_State" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2782 2821])
+                            ("frameIndex" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2822 2838]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2667 2959])
+                    ("Calculate_Num_Frames" function
+                       (:arguments 
+                          ( ("frame" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2990 3009])
+                            ("actionFrameData" variable
+                               (:reference 1
+                                :type ("std::unordered_map" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil)
+                                          ("Rendering_Components::Frame_Data_Packer" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3010 3097])
+                            ("action" variable
+                               (:reference 1
+                                :type ("Action_Component::Action_State" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3098 3137]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2963 3254])
+                    ("Get_Tileset_Frame_Data" function
+                       (:arguments 
+                          ( ("templateName" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3287 3313])
+                            ("frame" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3314 3333])
+                            ("actionFrameData" variable
+                               (:reference 1
+                                :type ("std::unordered_map" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil)
+                                          ("Rendering_Components::Frame_Data_Packer" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3334 3420]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3258 3831])
+                    ("i" variable
+                       (:default-value "120"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3837 3849])
+                    ("Get_Frame_Action_Data" function
+                       (:arguments 
+                          ( ("unitType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3881 3902])
+                            ("templateName" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3903 3929])
+                            ("frame" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3930 3949])
+                            ("actionFrameData" variable
+                               (:reference 1
+                                :type ("std::unordered_map" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil)
+                                          ("Rendering_Components::Frame_Data_Packer" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3950 4036])
+                            ("frameIndex" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4037 4053]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3853 15063]))                  
+                :type "namespace")
+                nil [116 15065]))          
+      :file "spritesheet_structs.h"
+      :pointmax 15066
+      :fsize 15065
+      :lastmodtime '(25779 44238 670565 96000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table-1561777d64dc"
+      :major-mode c-mode
+      :tags 
+        '( ("FLARE_frames.h" include nil nil [14 39])
+            ("PVG_frames.h" include nil nil [40 63])
+            ("Get_Spritesheet_Type" function
+               (:arguments 
+                  ( ("clipRect" variable
+                       (:reference 1
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91 110])
+                    ("sheetData" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Sprite_Sheet_Info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111 162])
+                    ("direction" variable
+                       (:reference 1
+                        :type ("Component::Direction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163 195])
+                    ("action" variable
+                       (:reference 1
+                        :type ("Action_Component::Action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [196 229]))                  
+                :type "void")
+                nil [65 932])
+            ("Position_For_Render" function
+               (:arguments 
+                  ( ("sheetData" variable
+                       (:pointer 1
+                        :type ("std::unordered_map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("Rendering_Components::Sheet_Data" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [964 1040])
+                    ("name" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1041 1059])
+                    ("frameIndex" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1060 1080])
+                    ("position" variable
+                       (:reference 1
+                        :type ("Component::Position" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1081 1111])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("Component::Camera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1112 1138])
+                    ("scale" variable
+                       (:reference 1
+                        :type ("Component::Scale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1139 1163])
+                    ("offset" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Sprite_Offset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1164 1208])
+                    ("clipRect" variable
+                       (:reference 1
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1209 1228])
+                    ("renderRect" variable
+                       (:reference 1
+                        :type ("SDL_FRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1229 1251])
+                    ("interactionRect" variable
+                       (:reference 1
+                        :type ("Component::Interaction_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1252 1297]))                  
+                :type ("SDL_FRect" type (:type "class") nil nil))
+                nil [934 1765])
+            ("Render_Equipment" function
+               (:arguments 
+                  ( ("equipment" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Equipment_Sprites" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1789 1840])
+                    ("scale" variable
+                       (:reference 1
+                        :type ("Component::Scale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1841 1865])
+                    ("sheetData" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Sprite_Sheet_Info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1866 1917])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("Component::Camera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1918 1944])
+                    ("position" variable
+                       (:reference 1
+                        :type ("Component::Position" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1945 1975])
+                    ("renderable" variable
+                       (:reference 1
+                        :type ("Component::Renderable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1976 2010])
+                    ("spriteOffset" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Sprite_Offset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2011 2061]))                  
+                :type "void")
+                nil [1767 2691])
+            ("Render_Sprite" function
+               (:arguments 
+                  ( ("zone" variable
+                       (:reference 1
+                        :type ("entt::registry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2712 2733])
+                    ("entity" variable
+                       (:reference 1
+                        :type ("entt::entity" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2734 2755])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("Component::Camera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2756 2782])
+                    ("scale" variable
+                       (:reference 1
+                        :type ("Component::Scale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2783 2807])
+                    ("renderable" variable
+                       (:reference 1
+                        :type ("Component::Renderable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2808 2842])
+                    ("position" variable
+                       (:reference 1
+                        :type ("Component::Position" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2843 2873])
+                    ("spriteOffset" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Sprite_Offset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2874 2924])
+                    ("sheetData" variable
+                       (:reference 1
+                        :type ("Rendering_Components::Sprite_Sheet_Info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2925 2976]))                  
+                :type "void")
+                nil [2693 3883])
+            ("Animation_Frame" function
+               (:arguments 
+                  ( ("zone" variable
+                       (:reference 1
+                        :type ("entt::registry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3906 3927])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("Component::Camera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3928 3954]))                  
+                :type "void")
+                nil [3885 6477]))          
+      :file "frame_rendering.h"
+      :pointmax 6482
+      :fsize 6481
+      :lastmodtime '(25777 61588 136518 391000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!nathanial!Workspace!RPG!src!Graphics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

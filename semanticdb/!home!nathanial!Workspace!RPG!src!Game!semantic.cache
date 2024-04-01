@@ -1,0 +1,312 @@
+;; Object semanticdb-project-database-file-1561792e9eb0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1561792e9eb0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1561777d64bc"
+      :major-mode c++-mode
+      :tags 
+        '( ("array" include (:system-flag t) nil [14 30])
+            ("unordered_map" include (:system-flag t) nil [31 55])
+            ("vector" include (:system-flag t) nil [56 73])
+            ("string" include (:system-flag t) nil [74 91])
+            ("map" include (:system-flag t) nil [92 106])
+            ("SQLite_unit_data.h" include nil nil [107 136])
+            ("components.h" include nil nil [137 160])
+            ("utilities.h" include nil nil [161 183])
+            ("social_control.h" include nil nil [184 211])
+            ("game_objects.h" include nil nil [212 237])
+            ("Load_Object_List" type
+               (:members 
+                  ( ("gameObjects" variable (:type "int") (reparse-symbol namespacesubparts) [409 421])
+                    ("Game_Objects" type
+                       (:members 
+                          ( ("gameObjects" variable (:type "int") (reparse-symbol classsubparts) [590 602])
+                            ("spells" variable
+                               (:dereference 3
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [607 739])
+                            ("items" variable
+                               (:dereference 3
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [744 874])
+                            ("objects" variable
+                               (:dereference 3
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [879 1013])
+                            ("props" variable
+                               (:dereference 3
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1018 1148])
+                            ("buildings" variable
+                               (:dereference 3
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1153 1291]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [425 1379])
+                    ("Get_Type" function
+                       (:arguments 
+                          ( ("typeStr" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1415 1436]))                          
+                        :type ("Component::Entity_Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1383 2171])
+                    ("Get_Subtype" function
+                       (:arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2192 2210]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2175 2239])
+                    ("Get_Entities" function
+                       (:arguments 
+                          ( ("typeStr" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2282 2303]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2244 3388])
+                    ("Social_Component" using (:type ("Social_Component" type
+                         (:prototype t
+                          :type "namespace")
+                          nil nil)) (reparse-symbol namespacesubparts) [3424 3457])
+                    ("Component" using (:type ("Component" type
+                         (:prototype t
+                          :type "namespace")
+                          nil nil)) (reparse-symbol namespacesubparts) [3460 3486])
+                    ("Get_Buildings" function
+                       (:arguments 
+                          ( ("race" variable (:type ("Social_Component::Race" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3531 3559])
+                            ("type" variable (:type ("Component::Entity_Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3560 3588])
+                            ("buildingType" variable (:type ("Component::Buildings" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3589 3623]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3492 3698])
+                    ("Get_Props" function
+                       (:arguments 
+                          ( ("race" variable (:type ("Social_Component::Race" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3738 3766])
+                            ("type" variable (:type ("Component::Entity_Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3767 3795])
+                            ("propType" variable (:type ("Component::Props" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3796 3822]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3703 3893])
+                    ("Get_Units" function
+                       (:arguments 
+                          ( ("race" variable (:type ("Social_Component::Race" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3933 3961])
+                            ("type" variable (:type ("Component::Entity_Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3962 3990])
+                            ("unitType" variable (:type ("Component::Units" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3991 4017]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3898 4088])
+                    ("Load_Entities" function (:type "void") (reparse-symbol namespacesubparts) [4098 5106]))                  
+                :type "namespace")
+                nil [239 5113]))          
+      :file "load_object_list.h"
+      :pointmax 5115
+      :fsize 5114
+      :lastmodtime '(25780 52442 67208 619000)
+      :unmatched-syntax '((punctuation 4088 . 4089) (punctuation 3893 . 3894) (punctuation 3698 . 3699) (punctuation 2239 . 2240) (punctuation 589 . 590) (semantic-list 558 . 589) (semantic-list 523 . 558) (semantic-list 488 . 523) (punctuation 486 . 487) (symbol 480 . 486) (punctuation 479 . 480) (punctuation 478 . 479) (symbol 475 . 478) (punctuation 474 . 475) (symbol 468 . 474) (punctuation 467 . 468) (punctuation 466 . 467) (symbol 463 . 466) (punctuation 462 . 463) (symbol 456 . 462) (punctuation 455 . 456) (punctuation 454 . 455) (symbol 451 . 454) (punctuation 408 . 409) (symbol 404 . 408) (punctuation 403 . 404) (punctuation 402 . 403) (symbol 391 . 402) (punctuation 390 . 391) (punctuation 389 . 390) (symbol 380 . 389) (semantic-list 375 . 380) (punctuation 373 . 374) (semantic-list 342 . 373) (semantic-list 307 . 342) (punctuation 305 . 306) (symbol 299 . 305) (punctuation 298 . 299) (punctuation 297 . 298) (symbol 294 . 297) (punctuation 293 . 294) (symbol 287 . 293) (punctuation 286 . 287) (punctuation 285 . 286) (symbol 282 . 285) (punctuation 281 . 282) (symbol 276 . 281) (punctuation 275 . 276) (punctuation 274 . 275) (symbol 271 . 274) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table-1561795458b4"
+      :major-mode c++-mode
+      :tags 
+        '( ("close.h" include nil nil [14 32])
+            ("char_create.h" include nil nil [33 57])
+            ("menu.h" include nil nil [58 75])
+            ("timer.h" include nil nil [76 94])
+            ("graphics.h" include nil nil [95 116])
+            ("SDL2/SDL.h" include nil nil [117 138])
+            ("../SDL_FontCache.h" include nil nil [139 168])
+            ("base_structs.h" include nil nil [169 194])
+            ("events.h" include nil nil [195 214])
+            ("pause.h" include nil nil [215 233])
+            ("camera.h" include nil nil [234 253])
+            ("utilities.h" include nil nil [254 276])
+            ("video.h" include nil nil [277 295])
+            ("ui_elements.h" include nil nil [296 320])
+            ("Main_Menu" type
+               (:members 
+                  ( ("Size" type
+                       (:members 
+                          ( ("x" variable (:type ("i2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [365 373])
+                            ("y" variable (:type ("i2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [365 373])
+                            ("w" variable (:type ("i2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [378 386])
+                            ("h" variable (:type ("i2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [378 386]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [347 391])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "\"assets/videos/main_menu.ogv\""
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [395 444])
+                    ("Overlay" function (:type "void") (reparse-symbol namespacesubparts) [448 670])
+                    ("colors" variable
+                       (:dereference 1
+                        :default-value "{{255, 255, 255},
+			 {255, 0,   0}}"
+                        :type ("SDL_Color" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [675 734])
+                    ("Button" type
+                       (:members 
+                          ( ("size" variable (:type ("SDL_FRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [758 773])
+                            ("scaledSize" variable (:type ("SDL_FRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [778 799])
+                            ("textSurface" variable
+                               (:pointer 1
+                                :type ("SDL_Surface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [804 829])
+                            ("backgroundTexture" variable
+                               (:pointer 1
+                                :type ("SDL_Texture" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [834 865])
+                            ("textTexture" variable
+                               (:pointer 1
+                                :type ("SDL_Texture" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [870 895])
+                            ("text" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [900 917])
+                            ("selected" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [922 944]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [738 949])
+                    ("Menu" type
+                       (:members 
+                          ( ("background" variable
+                               (:pointer 1
+                                :type ("SDL_Texture" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [971 995])
+                            ("buttons" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Button" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1045 1073]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [953 1078])
+                    ("menus" variable (:type ("Menu" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1120 1131])
+                    ("Convert_FPoint_To_Scale" function
+                       (:arguments 
+                          ( ("rect" variable
+                               (:reference 1
+                                :type ("SDL_FPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1170 1187]))                          
+                        :type ("SDL_FPoint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1135 1303])
+                    ("Update_Cursor" function (:type "void") (reparse-symbol namespacesubparts) [1307 1950])
+                    ("Display_Mouse" function (:type "void") (reparse-symbol namespacesubparts) [1954 2166])
+                    ("Build_Menu" function
+                       (:arguments 
+                          ( ("menu" variable
+                               (:reference 1
+                                :type ("Menu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3320 3331]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3304 3783])
+                    ("Create_Menu" function (:type "void") (reparse-symbol namespacesubparts) [3787 4265])
+                    ("toggleMenu" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4270 4293])
+                    ("Toggle" function (:type "void") (reparse-symbol namespacesubparts) [4297 4409])
+                    ("Show_Menu" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4427 4448]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4413 6513])
+                    ("Render_Menu" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9568 9589]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9551 9827])
+                    ("Menu_Options" function (:type "void") (reparse-symbol namespacesubparts) [9831 10003]))                  
+                :type "namespace")
+                nil [322 10079]))          
+      :file "main_menu.h"
+      :pointmax 10080
+      :fsize 10079
+      :lastmodtime '(25779 27181 438237 136000)
+      :unmatched-syntax '((punctuation 1039 . 1040) (number 1038 . 1039) (punctuation 1036 . 1037) (symbol 1023 . 1035) (punctuation 1022 . 1023) (punctuation 1021 . 1022) (symbol 1016 . 1021) (punctuation 1014 . 1015) (symbol 1006 . 1013) (symbol 1000 . 1005) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table-156177c1b86c"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [14 35])
+            ("graphics.h" include nil nil [36 57])
+            ("rendering.h" include nil nil [58 80])
+            ("init.h" include nil nil [81 98])
+            ("event_handler.h" include nil nil [99 125])
+            ("collision.h" include nil nil [126 148])
+            ("debug_system.h" include nil nil [149 174])
+            ("ai_control.h" include nil nil [175 198])
+            ("interface.h" include nil nil [199 221])
+            ("movement.h" include nil nil [222 243])
+            ("spells.h" include nil nil [244 263])
+            ("unit_positions.h" include nil nil [264 291])
+            ("unit_status.h" include nil nil [292 316])
+            ("formation_collisions.h" include nil nil [317 350])
+            ("squad_control.h" include nil nil [351 377])
+            ("character_stats.h" include nil nil [378 406])
+            ("map.h" include nil nil [407 423])
+            ("texture_packer.h" include nil nil [424 451])
+            ("sounds.h" include nil nil [452 471])
+            ("Game_Loop" type
+               (:members 
+                  ( ("running" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [501 522])
+                    ("Game_State" function (:type "void") (reparse-symbol namespacesubparts) [528 679])
+                    ("Game_Loop" function (:type "void") (reparse-symbol namespacesubparts) [686 2561]))                  
+                :type "namespace")
+                nil [474 2563]))          
+      :file "game_loop.h"
+      :pointmax 2563
+      :fsize 2562
+      :lastmodtime '(25772 14324 464912 531000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!nathanial!Workspace!RPG!src!Game!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

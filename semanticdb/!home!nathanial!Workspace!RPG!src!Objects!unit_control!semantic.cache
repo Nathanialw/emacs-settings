@@ -1,0 +1,114 @@
+;; Object semanticdb-project-database-file-15819390c650
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15819390c650"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15819390c66c"
+      :major-mode c++-mode
+      :tags 
+        '( ("action_components.h" include nil nil [14 44])
+            ("components.h" include nil nil [45 68])
+            ("graphics.h" include nil nil [69 90])
+            ("rendering_components.h" include nil nil [91 124])
+            ("create_entities.h" include nil nil [125 153])
+            ("spritesheet_structs.h" include nil nil [154 186])
+            ("world.h" include nil nil [187 205])
+            ("item_components.h" include nil nil [206 234])
+            ("utilities.h" include nil nil [235 257])
+            ("game_objects.h" include nil nil [258 283])
+            ("Death_Component" type
+               (:members 
+                  ( ("Corpse" type (:type "struct") (reparse-symbol namespacesubparts) [315 336]))                  
+                :type "namespace")
+                nil [285 338])
+            ("Death_Control" type
+               (:members 
+                  ( ("Death_Sequence" function
+                       (:arguments 
+                          ( ("direction" variable
+                               (:reference 1
+                                :type ("Component::Direction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [390 422])
+                            ("entity" variable (:type ("entt::entity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [423 443])
+                            ("scale" variable
+                               (:reference 1
+                                :type ("Component::Scale" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [444 468])
+                            ("sheetData" variable
+                               (:reference 1
+                                :type ("Rendering_Components::Sprite_Sheet_Info" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [469 520])
+                            ("action" variable
+                               (:reference 1
+                                :type ("Action_Component::Action" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [521 554])
+                            ("numFrames" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [555 570]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [369 1530])
+                    ("isDead" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1546 1567]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1534 3658])
+                    ("Item_On_Corpse" type
+                       (:members 
+                          ( ("entity" variable (:type ("entt::entity" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3690 3710])
+                            ("itemType" variable (:type ("Item_Component::Item_Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3715 3750]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3662 3755])
+                    ("Drop_Equipment_On_Death" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3789 3810]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3759 5726])
+                    ("Remove_Item_From_Corpse" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5760 5781]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5730 6485])
+                    ("Set_As_Corpse" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6509 6530]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6489 7515])
+                    ("Update_Ground_Box" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7543 7564]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7519 8006])
+                    ("Dead_Entity_Routine" function
+                       (:arguments 
+                          ( ("zone" variable
+                               (:reference 1
+                                :type ("entt::registry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8036 8057]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8010 8187]))                  
+                :type "namespace")
+                nil [340 8189]))          
+      :file "death_control.h"
+      :pointmax 8190
+      :fsize 8189
+      :lastmodtime '(25780 52462 416044 221000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!nathanial!Workspace!RPG!src!Objects!unit_control!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

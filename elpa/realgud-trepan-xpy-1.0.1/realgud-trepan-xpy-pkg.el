@@ -1,0 +1,2 @@
+;; Generated package description from realgud-trepan-xpy.el  -*- no-byte-compile: t -*-
+(define-package "realgud-trepan-xpy" "1.0.1" "Realgud front-end to trepan-xpy" '((realgud "1.5.0") (load-relative "1.3.1") (emacs "25")) :commit "f758f48266d90775643454e72214e40a4ed320b8" :authors '(("Rocky Bernstein" . "rocky@gnu.org")) :maintainer '("Rocky Bernstein" . "rocky@gnu.org") :url "https://github.com/realgud/realgud-trepan-xpy")

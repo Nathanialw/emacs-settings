@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file-15819390dd2c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15819390dd2c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15819390dd38"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [1 22])
+            ("init.h" include nil nil [23 40])
+            ("game_loop.h" include nil nil [41 63])
+            ("close.h" include nil nil [64 82])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [93 102])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103 116]))                  
+                :type "int")
+                nil [84 247]))          
+      :file "main.cpp"
+      :pointmax 248
+      :fsize 262
+      :lastmodtime '(25779 23664 56463 746000)
+      :unmatched-syntax nil))
+  :file "!home!nathanial!Workspace!RPG!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
